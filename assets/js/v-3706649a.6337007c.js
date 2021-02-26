@@ -1,0 +1,1 @@
+(self.webpackChunkwolfmoe_blog=self.webpackChunkwolfmoe_blog||[]).push([[88],{74:(e,t,l)=>{"use strict";l.r(t),l.d(t,{data:()=>a});const a={key:"v-3706649a",path:"/404.html",title:"",lang:"zh-TW",frontmatter:{layout:"404"},excerpt:"",headers:[],filePathRelative:null,git:{}}},258:(e,t,l)=>{"use strict";l.r(t),l.d(t,{default:()=>a});const a={render:function(e,t){return null}}}}]);
