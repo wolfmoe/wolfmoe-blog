@@ -1,0 +1,28 @@
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Setup
+      uses: actions/setup-node@v2
+      with:
+        node-version: '15.1.0'
+    - name: Install 🔆
+      env:
+        BASE_PATH: /
+      run: |
+        npm install -g yarn
+        yarn install
+        yarn run build
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@4.0.0
+      with:
+        branch: gh-pages
+        folder: dist
+        clean: true
+        clean-exclude: |
+          CNAME
+          README.md
