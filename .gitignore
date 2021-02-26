@@ -1,0 +1,10 @@
+node_modules
+.temp
+.cache
+.vscode
+package-lock.json
+yarn.lock
+yarn-error.log
+npm-debug.log
+dist
+theme
